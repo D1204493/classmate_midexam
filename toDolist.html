@@ -1,0 +1,23 @@
+<!DOCTYPE html><!--使用html5-->
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <title>toDo</title>
+    <meta name="author" content="d1204429">
+    <link rel="stylesheet" type="text/css" href="toDolist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="toDolist.js"></script>
+</head>
+<body>
+<div class="word">待辦事項清單</div>
+<div class = "main">
+    <div class="container">
+        <input id="input" autocomplete="off" placeholder="例如:買早餐" size="22" style="font-size: 25px" maxlength="12">
+        <button id="subBtn" type="button" class="bu" onclick="subBtnClick()">送出</button>
+    </div>
+    <ul id="listToDo" class="listToDo"></ul>
+
+</div>
+<div class="word1"><button id="clearBtn" class="word2" type="button" onclick="clearAll()" hidden >清除所有項目</button></div>
+</body>
+</html>

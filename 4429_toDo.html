@@ -9,15 +9,52 @@
     <script src="4429_toDo.js"></script>
 </head>
 <body>
-<div class="word">待辦事項清單</div>
+
 <div class = "main">
-    <div class="container">
-        <input id="input" autocomplete="off" placeholder="例如:買早餐" size="22" style="font-size: 25px" maxlength="12">
-        <button id="subBtn" type="button" class="bu" onclick="subBtnClick()">送出</button>
-    </div>
+    <div class="word">待辦事項清單</div>
+        <div class="container">
+        <!--id:設置元素的 ID，它使得你可以通過 JavaScript 或 CSS 根據該 ID 操作或樣式化這個元素-->
+        <!--autocomplete:這個屬性用於關閉瀏覽器的自動填充功能，它防止瀏覽器根據以前輸入的內容來自動填寫這個輸入框-->
+        <!--placeholder:是一個占位符屬性，它在輸入框中顯示一段"提示文字"，告訴使用者應該輸入什麼類型的內容-->
+        <!--size:這個屬性指定了輸入框的寬度，以字符為單位-->
+        <!--style:這個屬性用於直接設置元素的樣式，這裡的 font-size 樣式將輸入框中的字體大小設置為 25 像素。-->
+        <!--maxlength:這個屬性用於設置輸入框中可以輸入的最大字符數。在這裡，它設置為最多可以輸入 12 個字符位-->
+            <input id="input" autocomplete="off"
+                placeholder="例如:買早餐"
+                size="22"
+                style="font-size: 25px"
+                maxlength="12">
+
+        <!--id:這個屬性設置了元素的 ID，它可以在 JavaScript 中通過這個 ID 操作這個元素-->
+        <!--type:這個屬性指定了按鈕的類型，這裡按鈕類型為 "button"，意味著它只是一個普通的按鈕，不會提交表單或執行其他預設行為-->
+        <!--class:這個屬性定義了元素的類名，類名為 "bu"，可以用來在 CSS 中對這個按鈕進行樣式化-->
+        <!--onclick="subBtnClick()":這個屬性定義了按鈕被點擊時所觸發的 JavaScript 函數。
+                                    在這裡，當按鈕被點擊時，會調用名為 subBtnClick() 的函數。
+                                    這個函數可能是事先在 JavaScript 中定義好的，用於處理按鈕點擊事件的邏輯。-->
+        <!--送出:按鈕上顯示的文本-->
+            <button id="subBtn" type="button"
+                class="bu" onclick="subBtnClick()">送出</button>
+        </div>
+
+        <!--<ul>，它代表了一個無序列表（unordered list）-->
+        <!--ul:這是無序列表的開始標籤，它表示一個包含多個列表項目的區塊-->
+        <!--id="listToDo"：這是列表的 ID 屬性，它被設置為 "listToDo"。
+                          這個 ID 可以用於在 JavaScript 中通過它來操作或者訪問這個特定的列表-->
+        <!--class="listToDo"：這是列表的類名（class），它被設置為 "listToDo"。
+                             類名通常用於在 CSS 中對元素進行樣式化-->
     <ul id="listToDo" class="listToDo"></ul>
 
+    <div class="word2">
+    <button id="clearBtn"
+            type="button" onclick="clearAll()" hidden >清除所有項目</button>
+    </div>
+
 </div>
-<div class="word1"><button id="clearBtn" class="word2" type="button" onclick="clearAll()" hidden >清除所有項目</button></div>
+
+<!--<div class="word1">-->
+<!--    <button id="clearBtn" class="word2"-->
+<!--            type="button" onclick="clearAll()" hidden >清除所有項目</button>-->
+<!--</div>-->
+
 </body>
 </html>

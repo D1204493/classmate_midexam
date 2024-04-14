@@ -1,26 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+    box-sizing: border-box;
+}
+
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: linear-gradient(to right, #272727, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .main{
-    margin: 0 0 0 420px;
-    justify-content:center ;
+    background-color: orange;
+    padding: 25px;
+    width: 500px;
+    border-radius: 10px; //弧度
 }
 
 .word{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 50px;
     text-align: center;
     color: azure;
-    margin: 50px auto;
 }
 
 .container{
     margin: 30px 0 0 0;
-    text-align: left;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    background-color: blue;
+    margin-bottom: 30px;
 }
 
 .bu{
-    font-size: 25px;
+    height: 36px;
+    width: 80px;
+    font-size: 20px;
     background-color: cornflowerblue;
 }
 
@@ -48,14 +68,23 @@ body {
 background-color: transparent;
 }
 
-.word1 {
-
-    text-align: center;
-    margin: 50px 0 0 0;
-}
+/*.word1 {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    text-align: center;*/
+/*    margin: 50px 0 0 0;*/
+/*}*/
 
 .word2{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /*font-size: 30px;*/
+    /*color: crimson;*/
+    background-color: green;
+}
+.word2 button{
     font-size: 30px;
     color: crimson;
-    background-color: transparent;
 }
